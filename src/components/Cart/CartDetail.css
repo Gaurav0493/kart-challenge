@@ -1,0 +1,146 @@
+.cart-details-container {
+    width: 400px;
+    margin: 20px auto;
+    background: #faf9f8;
+    border-radius: 16px;
+    padding: 24px;
+    height: auto;
+  }
+
+  .cart-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c17859;
+    margin-bottom: 32px;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  .item-details {
+    flex: 1;
+  }
+
+  .item-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .item-quantity-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .quantity {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c17859;
+  }
+
+  .price-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+  }
+
+  .current-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #999;
+    transition: all 0.2s ease;
+    margin-left: 16px;
+  }
+
+  .remove-button:hover {
+    background: #f0f0f0;
+    color: #666;
+  }
+
+  .order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 32px 0;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .total-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .total-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .carbon-neutral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .carbon-icon {
+    width: 16px;
+    height: 16px;
+    color: #22c55e;
+  }
+
+  .confirm-button {
+    width: 100%;
+    background: #C73B0E;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .confirm-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 138, 101, 0.4);
+  }
+
+  .confirm-button:active {
+    transform: translateY(1px);
+  }
+
+  .empty-cart {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    margin: 40px 0;
+  }

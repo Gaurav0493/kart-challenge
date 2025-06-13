@@ -1,0 +1,25 @@
+.list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  justify-content: flex-start;
+}
+
+/* '@media (max-width: 640px)': {
+    gridTemplateColumns: '1fr',
+    gap: '16px',
+  },
+  '@media (min-width: 641px) and (max-width: 1024px)': {
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '20px',
+  },
+  '@media (min-width: 1025px) and (max-width: 1400px)': {
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '24px',
+  },
+  '@media (min-width: 1401px)': {
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    gap: '28px',
+  } */

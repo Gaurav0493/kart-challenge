@@ -1,0 +1,24 @@
+:root {
+  font-family: "Red Hat Text", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f5ece8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
