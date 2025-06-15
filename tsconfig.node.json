@@ -102,5 +102,5 @@
     "allowImportingTsExtensions": true,
     "jsx": "react"
   },
-  "include": ["vite.config.mjs", "src/**/*", "tests/**/*"]
+  "include": ["vite.config.mjs", "src/**/*", "tests/**/*", "api"],
 }

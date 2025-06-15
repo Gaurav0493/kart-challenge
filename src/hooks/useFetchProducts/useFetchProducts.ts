@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ProductType } from '../../common/types';
 
-const API_URL = process.env.NODE_ENV === 'development' 
-  ? '/api/product' 
-  : 'https://orderfoodonline.deno.dev/api/product';
-
 const useFetchProducts = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -14,7 +10,7 @@ const useFetchProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await axios.get(API_URL);
+        const { data } = await axios.get('/api/product');
         setProducts(data);
       } catch (err: unknown) {
         setError(true);
