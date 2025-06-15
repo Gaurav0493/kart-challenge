@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { CartItems, ProductType } from "../../common/types";
 import "./ListItem.css";
 
@@ -25,8 +25,6 @@ const ListItem: React.FC<ListProps> = ({
   };
 
   const { name, price, image, category } = product;
-
-  const [isHovered, setIsHovered] = useState(false);
 
   const CartIcon = () => (
     <svg className="cart-icon" viewBox="0 0 24 24" fill="#C73B0E">
