@@ -1,6 +1,6 @@
 import React from 'react'
 import { CartItems, ProductType } from '../../common/types';
-import ListItem from '../ListItem';
+import ListItem from '../ListItem/index';
 import './List.css';
 
 type ListProps = {
