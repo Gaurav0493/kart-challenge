@@ -21,7 +21,7 @@ describe('Modal', () => {
     it('calls toggleModal(false) when overlay is clicked', () => {
         const toggleModal = jest.fn();
         render(<Modal toggleModal={toggleModal} />);
-        const overlay = screen.getByRole('dialog', { hidden: true }) || screen.getByClass('modal-overlay') || document.querySelector('.modal-overlay');
+        const overlay = screen.getByRole('dialog', { hidden: true }) || document.querySelector('.modal-overlay');
         fireEvent.click(overlay!);
         expect(toggleModal).toHaveBeenCalledWith(false);
     });
