@@ -9,9 +9,8 @@ const useFetchProducts = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const options = { method: 'GET', headers: {api_key: 'apitest', Accept: '*' }, url: 'https://orderfoodonline.deno.dev/api/product' };
       try {
-        const { data } = await axios.request(options);
+        const { data } = await axios.get('/api/product');
         setProducts(data);
       } catch (err: unknown) {
         setError(true);

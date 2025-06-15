@@ -10,7 +10,7 @@ export default defineConfig({
       '/api': {
         target: 'https://orderfoodonline.deno.dev',
         changeOrigin: true,
-        secure: true
+        secure: true,
       }
     }
   },

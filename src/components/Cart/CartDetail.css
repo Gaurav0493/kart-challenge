@@ -144,3 +144,27 @@
     font-size: 16px;
     margin: 40px 0;
   }
+
+
+  @media (max-width: 640px) {
+    .cart-details-container {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px;
+      padding: 40px;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-container {
+      margin: 10px;
+      padding: 20px;
+    }
+    
+    .cart-title {
+      font-size: 24px;
+    }
+    
+    .cart-message {
+      font-size: 14px;
+    }
+  }

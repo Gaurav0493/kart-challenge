@@ -9,9 +9,8 @@ const useFetchProductById= (productId: string) => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const options = { method: 'GET', url: 'https://orderfoodonline.deno.dev/api/product' + ( productId ? `/${productId}` : '' ) };
       try {
-        const { data } = await axios.request(options);
+        const { data } = await axios.get(`api/product ${productId ? `/${productId}` : ''}`);
         setProducts(data);
       } catch (err: unknown) {
         setError(true);

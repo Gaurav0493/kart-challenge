@@ -44,6 +44,14 @@
   }
 
   /* Responsive design */
+  @media (max-width: 640px) {
+    .cart-container {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 40px;
+    }
+  }
   @media (max-width: 480px) {
     .cart-container {
       margin: 10px;

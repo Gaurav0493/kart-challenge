@@ -48,8 +48,6 @@ function App() {
     return <div>Error fetching products.</div>;
   }
 
-  console.log(products);
-
   return (
     <div className='app-container'>
       <div className='app-list-container'>
