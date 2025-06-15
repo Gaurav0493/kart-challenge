@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ProductType } from '../../common/types';
 
+const API_URL = process.env.NODE_ENV === 'development' 
+  ? '/api/product' 
+  : 'https://kart-challenge-jk9m.vercel.app/api/product';
+
 const useFetchProducts = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -10,7 +14,7 @@ const useFetchProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await axios.get('/api/product');
+        const { data } = await axios.get(API_URL);
         setProducts(data);
       } catch (err: unknown) {
         setError(true);
