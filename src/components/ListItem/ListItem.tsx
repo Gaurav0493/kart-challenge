@@ -33,7 +33,7 @@ const ListItem: React.FC<ListProps> = ({
   );
 
   return (
-    <div className="list-item">
+    <div className="list-item" role="listitem">
       <div className="image-container">
         <img
           src={image.thumbnail}
