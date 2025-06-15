@@ -4,7 +4,7 @@ import { ProductType } from '../../common/types';
 
 const API_URL = process.env.NODE_ENV === 'development' 
   ? '/api/product' 
-  : 'https://kart-challenge-jk9m.vercel.app/api/product';
+  : 'https://orderfoodonline.deno.dev/api/product';
 
 const useFetchProducts = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
